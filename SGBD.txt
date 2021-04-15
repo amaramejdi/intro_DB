@@ -1,0 +1,59 @@
+MariaDB********************************************************************************
+MariaDB, an open-source fork from MySQL, has commercial support. It works under a GNU General Public License and has similar commands, APIs, and libraries as MySQL.
+
+Pros of MariaDB
+Encryption. For MariaDB, open source doesn’t mean insecure. In addition to internal security and password check, MariaDB provides such features as PAM and LDAP authentication, Kerberos, and user roles. In combination with encrypted tablespaces, tables, and logs, it creates a robust protective layer for data. Above that, MariaDB publishes the related releases on each security update, keeping the security patches totally transparent.
+
+Broad functionality. MariaDB has introduced a lot of new features in the last few years.  For instance, GIS support suggests smooth coordinates storage and location data query. Dynamic columns allow a single DBMS to provide both SQL and NoSQL data handling for different needs. You also can extend its functionality with plugins that are available at MySQL via 3rd parties only. MariaDB is shipped with storage engines for NoSQL backend, legacy databases migration tools, sharding options, and many more.
+
+High performance. Although MariaDB originates from the MySQL engine, it got very far in terms of performance. Extensive optimization features improve thread pool management and data processing. Thus, when rows from the table are deleted, the operating system immediately accesses the free space, eliminating gaps in the tablespace. On top of that, the database management system suggests engine-independent table statistics. This feature enhances the optimizer’s performance, accelerates query processing, and helps customize data analysis.
+
+Cons of MariaDB
+Still growing community. Albeit MariaDB has a substantial open-source contribution, its community is yet to grow. Since this database management system was established not so long ago, the number of professionals is relatively small.
+
+Gaps between MySQL and MariaDB update versions. Though the MariaDB team is constantly merging its code with that of MySQL, it’s already not that simple to keep them in line. Given currently existing differences between MariaDB 10.4 and MySQL 8.0, further deviations are yet to come. Additionally, MySQL engineers introduce some native features to the code that are only available to commercial MySQL users. This can create compatibility issues or migration problems from MariaDB back to MySQL.
+
+Use cases
+Since MariaDB is close to MySQL, it can be used to work with the same types of web-based applications. Additionally, you get extended location data storage, higher performance, and improved scalability.
+
+
+MSSQL**********************************************************************************
+As a completely commercial tool, Microsoft SQL Server is one of the most popular relational DBMS, in addition to MySQL, PostgreSQL, and Oracle. It copes well with effective storing, changing, and managing relational data. To interact with SQL Server databases, DB engineers usually utilize the Transact-SQL (T-SQL) language, which is an extension of the SQL standard.
+
+Pros of MSSQL
+Variety of versions. Microsoft SQL Server provides a wide choice of different options with diverse functionalities. For instance, the Express edition with a free database offers entry-level tooling, the perfect match for learning and building desktop or small server data-driven applications. The Developers option allows for building and testing applications including some enterprise functionalities, but without a production server license. For bigger projects, there are also Web, Standard, and Enterprise editions, with a varying extent of administrative capabilities and service levels.
+
+End-to-end business data solution. With a focus on mostly commercial solutions, MSSQL provides a lot of business value-added features. The optional selection of components allows building ETL solutions, forming a knowledge base, and implementing data clearance. Also, it provides tools for overall data administration, online analytical processing, and data mining, additionally providing options for report and visualization generation.
+
+Rich documentation and community assistance. With Microsoft SQL Server aimed at comprehensive database maintenance, the full online documentation also reflects this concept. The consequently structured guidelines, numerous whitepapers, and demos give a full picture on the MSSQL data system. Also, Microsoft Premier provides access to dedicated Microsoft community support, which is an advantage when a DB engineer needs assistance.
+
+Cloud database support. Being a part of the consistent Microsoft ecosystem, MSSQL can be integrated with Microsoft cloud, Azure SQL Database, or SQL Server on Azure Virtual Machines. The solutions allow shifting database administration to the cloud if your business software database becomes really overwhelming and hard to administer.
+
+Cons of MSSQL
+Cost-consuming. Being mostly used at enterprise scale, MSSQL Server remains one of the most expensive solutions. Speaking of numbers, the Enterprise edition currently costs over $14, 000 per core, sold as 2 core packs.
+
+Unclear and floating license conditions. Another issue is the ever-changing licensing process. The pricing strategy itself is hard to understand and the elements included in a particular edition are floating, tending to shift from one to another.
+
+Complicated tuning process. For those beginners who have to operate heavy data sets, working with query optimization and performance tuning may be problematic. As the process is not so obvious, it can create substantial bottlenecks early on.
+
+Use cases
+MSSQL Server is a reasonable option for companies with other Microsoft product subscriptions. As Microsoft creates a sustainable ecosystem with well-integrated services, the MSSQL here with its access to cloud and powerful data retrieval tools comes in handy.
+
+
+Cassandra********************************************************************************
+Cassandra is a decentralized system developed by Apache. Cassandra is a free DBMS whose strength is in its multi-replication and multi-deployment features. These peculiarities allow for numerous query copying and deploying all of them at the same time. Being rapidly scalable, Cassandra allows for managing large data volumes by replicating it into multiple nodes. It eliminates the problem of database crash – if some of the nodes fail at any time, it’s replaced immediately, and the system keeps working as long as at least one single node is safe.
+
+Cassandra uses its own query language, CQL. In its syntax, it’s very similar to SQL but doesn’t apply joins, replacing them with so-called column families. And the second difference is that not all columns in a table are stored for subqueries. Some of them are used as clustering columns, where adjacent data is put next to each other for fast retrieval. Why does that matter? It provides faster querying from massive datasets, accelerating data processing.
+
+Pros of Cassandra
+Data security. Due to its master node replication feature, Cassandra stays failure tolerant. It means that DB engineers can feel confident about data safety unless master nodes fail all at the same time. As long as it’s extremely unlikely, the database and the application built on it will stay sound and secure.
+
+Flexibility and on-hand amendments. Casandra’s simple syntax has the best of SQL and NoSQL. In addition to scalability, it largely contributes to dataset flexibility. Cassandra collects data on the go, and data retrieval shares the same simplicity, despite dataset size. This allows enlarging the database to the fullest extent.
+
+Cons of Cassandra
+Slow reading. As Cassandra was initially designed for fast writing, its weakness lies in its incapacity for fast reading. One of the reasons for it is that there are no bottlenecks for information sent, so it needs more time to process.
+
+Requires additional resources. As Cassandra processes multiple layers of data simultaneously, it demands enough power to do it, resulting in the JVM usage. This means additional investment in both software and hardware. If this is the first time a company faces such a necessity and is not sure about the resources, then maybe it should consider other database systems.
+
+Use cases
+Thanks to even data distribution, Cassandra is relevant in applications where large volumes of information are processed. For instance, it’s a great choice for data centers. Also, Cassandra fits well with real-time analytics, as it allows linear scaling and data increase in real time. You may also consider it for applications with constant data streaming like weather apps. Another option is using it as a DBMS for an eCommerce store, as it allows for storing purchase history and other transactions. Add here feasibility to track such data types as order status and packages, and you’ll get the full solution with eCommerce delivery integration.
